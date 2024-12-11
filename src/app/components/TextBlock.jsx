@@ -4,22 +4,23 @@ const TextBlock =({
     description,
     buttonText,
     alignment = "center",
-    headingColor = "text-[#ef7a54]",
-    descriptionColor = "bg-[#ef7a54] text-white",
+    heading1Color = "text-[#ef7a54]",
+    heading2Color = "text-[#055346]",
+    descriptionColor = "text-[#64716a]",
     buttonColor = "bg-[#ef7a54] text-white",
     className = ""
 }) => {
     return (
         <div className={`flex flex-col items-${alignment} ${className}`}>
             {/* Headings */}
-            <h1 className={`text-4xl font-bold ${headingColor} mb-2`}>{heading1}</h1>
-            <h2 className={`text-2xl font-semibold ${headingColor} mb-4`}>{heading2}</h2>
+            <h1 className={`text-lg font-bold ${heading1Color} mb-2`}>{heading1}</h1>
+            <h2 className={`text-4xl font-semibold ${heading2Color} mb-4`}>{heading2}</h2>
             
             {/* Description */}
-            <p className={`text-lg ${descriptionColor} mb-6`}>{description}</p>
+            <p className={`text-xl ${descriptionColor} mb-6`}>{description}</p>
             
             {/* Button */}
-            <button className={`px-6 py-2 rounded ${buttonColor} hover:opacity-90`}>
+            <button className={`text-2xl px-7 py-5 rounded-full ${buttonColor} hover:bg-white hover:text-[#ef7a54] hover:outline outline-1`}>
                 {buttonText}
             </button>
         </div>
