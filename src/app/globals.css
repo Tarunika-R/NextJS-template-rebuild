@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer base {
+  .heading1 {
+    @apply font-bold text-lg font-lato
+  } 
+}

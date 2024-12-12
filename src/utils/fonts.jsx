@@ -1,6 +1,7 @@
 import {
   
     Sansita as FontSansita,
+    Lato as FontLato,
  } from "next/font/google";
  
  
@@ -9,5 +10,12 @@ import {
     variable: "--font-sansita",
     weight: ["400", "700", "800", "900"],
  });
+
+ const fontLato = FontLato({
+    subsets: ["latin"],
+    variable: "--font-lato",
+    weight: ["400", "700"],
+ })
  
  export const sansita = fontSansita.variable;
+ export const lato = fontLato.variable;

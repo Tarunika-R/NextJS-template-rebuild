@@ -14,7 +14,8 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sansita: ["var(--font-sansita)"]
+        sansita: ["var(--font-sansita)"],
+        lato: ["var(--font-lato)"]
       }
     },
   },

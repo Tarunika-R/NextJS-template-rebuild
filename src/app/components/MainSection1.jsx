@@ -1,4 +1,5 @@
 import TextBlock from "./TextBlock";
+import Image from "next/image";
 
 const MainSection1 = () => {
   return (
@@ -18,10 +19,12 @@ const MainSection1 = () => {
 
       {/* Image section */}
       <div className="flex justify-center md:justify-end w-full md:w-1/2">
-        <img 
-          src="/assets/images/image1.jpg" 
+        <Image 
+          src="/assets/images/image1.jpg"
           alt="main-section-1" 
-          className="h-[65rex] w-[50rex] pt-16 rounded-t-full bg-white"
+          width={500}
+          height={500}
+          className="rounded-t-full bg-white"
         />
       </div>
     </div>

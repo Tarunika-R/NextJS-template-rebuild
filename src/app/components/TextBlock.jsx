@@ -13,7 +13,7 @@ const TextBlock =({
     return (
         <div className={`flex flex-col items-${alignment} ${className}`}>
             {/* Headings */}
-            <h1 className={`text-lg font-bold ${heading1Color} mb-2`}>{heading1}</h1>
+            <h1 className={`heading1 ${heading1Color} mb-2`}>{heading1}</h1>
             <h2 className={`text-4xl font-semibold ${heading2Color} mb-4`}>{heading2}</h2>
             
             {/* Description */}

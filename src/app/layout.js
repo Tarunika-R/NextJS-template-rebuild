@@ -2,7 +2,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import MainSection1 from "./components/MainSection1";
-import {Sansita} from "next/font/google";
+import {Sansita, Lato} from "next/font/google";
+import { cn } from "@/lib/utils";
+//import { lato, sansita } from "@/utils/fonts";
 
 export const metadata = {
   title: "ZealTaste",
@@ -15,10 +17,18 @@ const sansita = Sansita({
   variable: "--font-sansita",
 });
 
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ['400','700'],
+  variable: "--font-lato",
+});
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{background:'#f9efe6'}} className={`${sansita.variable} font-sansita px-6 md:px-40 py-1`}>
+      <body style={{background:'#f9efe6'}} className={cn(
+               "min-h-screen bg-background font-sansita antialiased px-6 md:px-40 py-1", lato.variable, sansita.variable
+            )}>
           <Header/>
           <MainSection1/>
         {children}
