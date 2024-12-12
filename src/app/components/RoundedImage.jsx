@@ -1,10 +1,13 @@
-const RoundedImage = ({ src, alt }) => {
-    return (
-      <div className="rounded-l-full overflow-hidden">
-        <img src={src} alt={alt} className="w-full h-full object-cover" />
-      </div>
-    );
-  };
-  
-  export default RoundedImage;
-  
+import React from "react";
+
+const RoundedImage = ({ src, alt, className = "" }) => {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={`object-cover ${className}`}
+    />
+  );
+};
+
+export default RoundedImage;

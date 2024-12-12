@@ -8,6 +8,7 @@ const TextBlock =({
     heading2Color = "text-[#055346]",
     descriptionColor = "text-[#64716a]",
     buttonColor = "bg-[#ef7a54] text-white",
+    showButton = true,
     className = ""
 }) => {
     return (
@@ -20,9 +21,11 @@ const TextBlock =({
             <p className={`para ${descriptionColor} mb-6`}>{description}</p>
             
             {/* Button */}
+            {showButton && ( // Render the button conditionally
             <button className={`button ${buttonColor} hover:bg-white hover:text-[#ef7a54] hover:outline outline-1`}>
                 {buttonText}
             </button>
+            )}
         </div>
       )
 }

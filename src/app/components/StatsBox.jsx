@@ -1,15 +1,13 @@
-const StatsBox = ({ Icon, count, label, bgColor = "bg-[#055346]", textColor = "text-white" }) => {
-    return (
-      <div
-        className={`flex flex-col items-center justify-center w-40 h-40 rounded-full ${bgColor} text-center`}
-      >
-        {/* Render the Icon */}
-        {Icon && <Icon className="w-8 h-8 mb-2 text-white" />}
-        <h3 className={`text-2xl font-bold ${textColor}`}>{count}</h3>
-        <p className={`text-sm ${textColor}`}>{label}</p>
-      </div>
-    );
-  };
-  
-  export default StatsBox;
-  
+import React from "react";
+
+const StatsBox = ({ Icon, count, label, bgColor }) => {
+  return (
+    <div className={`w-[17.5rem] h-[17.5rem] ${bgColor} rounded-full flex flex-col items-center justify-center space-y-4`}>
+      <Icon className="text-4xl mb-2 text-white" />
+      <h2 className={`text-5xl font-bold font-sansita`}>{count}</h2>
+      <p className={`text-2xl pt-2 text-[#ef7a54] font-sansita`}>{label}</p>
+    </div>
+  );
+};
+
+export default StatsBox;
