@@ -1,8 +1,8 @@
-import { TfiEmail } from 'react-icons/tfi'; // Heroicons
+import { TfiEmail } from 'react-icons/tfi'; 
 
 export default function Header() {
   return (
-    <header style={{background:'#f9efe6'}} className='flex justify-between items-center px-4 py-5 text-#ef7a54'>
+    <header style={{background:'#f9efe6'}} className='flex justify-between items-center px-4 py-5 md:px-44 md:pt-6 text-#ef7a54'>
       <div>
         <img src="/assets/images/logo.png" alt='logo' className='h-[5.1rem]'/>
       </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MainSection1 = () => {
   return (
-    <div className="w-full flex flex-col-reverse md:flex-row items-center md:items-start md:justify-between px-4 md:px-4 py-10 md:py-7">
+    <div style={{background:'#f9efe6'}} className="w-full flex flex-col-reverse md:flex-row items-center md:items-start md:justify-between px-6 md:px-44 md:pb-14 py-10 md:py-7">
       <TextBlock
         heading1="SAVORY WHEELS"
         heading2="Zeal Taste: Culinary Delights on Wheels"

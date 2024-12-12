@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import MainSection1 from "./components/MainSection1";
+import ContactCardSection from "./components/ContactCardSection";
 import {Sansita, Lato} from "next/font/google";
 import { cn } from "@/lib/utils";
 //import { lato, sansita } from "@/utils/fonts";
@@ -26,11 +27,12 @@ const lato = Lato({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{background:'#f9efe6'}} className={cn(
-               "min-h-screen bg-background antialiased px-6 md:px-40 py-1", lato.variable, sansita.variable
+      <body className={cn(
+               "min-h-screen bg-background antialiased", lato.variable, sansita.variable
             )}>
           <Header/>
           <MainSection1/>
+          <ContactCardSection/>
         {children}
       </body>
     </html>

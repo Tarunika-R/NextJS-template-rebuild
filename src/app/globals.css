@@ -22,15 +22,15 @@ body {
 
 @layer base {
   .heading1 {
-    @apply font-extrabold text-xl font-lato
+    @apply font-bold tracking-wider text-base font-lato
   } 
   .heading2 {
-    @apply text-7xl font-semibold font-sansita
+    @apply text-7xl gap-3 font-semibold font-sansita
   }
   .para {
     @apply text-xl font-lato
   }
   .button {
-    @apply text-2xl px-7 py-5 rounded-full font-sansita
+    @apply text-2xl px-12 py-5 rounded-full font-sansita
   }
 }
