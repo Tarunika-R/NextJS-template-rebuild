@@ -1,3 +1,5 @@
+import { sansita } from '@/utils/fonts';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -11,6 +13,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sansita: ["var(--font-sansita)"]
+      }
     },
   },
   plugins: [],

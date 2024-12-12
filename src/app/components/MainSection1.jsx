@@ -13,7 +13,7 @@ const MainSection1 = () => {
         heading2Color="text-[#055346] pt-3 text-center md:text-6xl md:text-left md:pt-8"
         descriptionColor="text-[#64716a] text-center md:pl-0 pl-36 pt-3 pr-28 text-md md:text-left"
         buttonColor="bg-[#ef7a54] text-white font-bold"
-        className="flex md:w-2/4 mt-16 bg-black md:place-items-start items-center pt-1"
+        className="flex md:w-2/4 mt-16 md:place-items-start items-center pt-1"
       />
 
       {/* Image section */}
