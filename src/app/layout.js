@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body style={{background:'#f9efe6'}} className={cn(
-               "min-h-screen bg-background font-sansita antialiased px-6 md:px-40 py-1", lato.variable, sansita.variable
+               "min-h-screen bg-background antialiased px-6 md:px-40 py-1", lato.variable, sansita.variable
             )}>
           <Header/>
           <MainSection1/>

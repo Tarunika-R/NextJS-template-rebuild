@@ -8,7 +8,7 @@ export default function Header() {
       </div>
       <button className="text-[#ef7a54] message-icon flex items-center pr-4">
         <TfiEmail className='text-3xl rounded-xl'/>
-        <span style={{color:'#ef7a54'}} className='ml-2 text-xl font-sans font-normal'>abc@zealtaste.com</span>
+        <span style={{color:'#ef7a54'}} className='ml-2 text-xl font-lato font-normal'>abc@zealtaste.com</span>
       </button>
     </header>
   )

@@ -14,13 +14,13 @@ const TextBlock =({
         <div className={`flex flex-col items-${alignment} ${className}`}>
             {/* Headings */}
             <h1 className={`heading1 ${heading1Color} mb-2`}>{heading1}</h1>
-            <h2 className={`text-4xl font-semibold ${heading2Color} mb-4`}>{heading2}</h2>
+            <h2 className={`heading2 ${heading2Color} mb-4`}>{heading2}</h2>
             
             {/* Description */}
-            <p className={`text-xl ${descriptionColor} mb-6`}>{description}</p>
+            <p className={`para ${descriptionColor} mb-6`}>{description}</p>
             
             {/* Button */}
-            <button className={`text-2xl px-7 py-5 rounded-full ${buttonColor} hover:bg-white hover:text-[#ef7a54] hover:outline outline-1`}>
+            <button className={`button ${buttonColor} hover:bg-white hover:text-[#ef7a54] hover:outline outline-1`}>
                 {buttonText}
             </button>
         </div>
