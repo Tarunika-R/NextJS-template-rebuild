@@ -7,6 +7,30 @@
   --foreground: #171717;
 }
 
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#app {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow{
+  flex-grow: 1;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
