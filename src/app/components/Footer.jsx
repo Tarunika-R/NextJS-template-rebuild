@@ -1,5 +1,7 @@
 import TextBlock from "./TextBlock";
 import ReservationForm from "./ReservationForm";
+import FooterInfo from "./FooterInfo";
+
 
 const Footer = () => {
   return (
@@ -32,6 +34,9 @@ const Footer = () => {
         Book Your Table
       </a>
       </div>
+
+      {/* Footer Info */}
+      <FooterInfo/>
     </section>
   );
 };
