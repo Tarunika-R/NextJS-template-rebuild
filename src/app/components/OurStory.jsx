@@ -22,7 +22,7 @@ const OurStorySection = () => {
         />
 
         {/* Content Below the Text */}
-        <div className="grid grid-cols-1 md:grid-cols-3 mt-12 bg-slate-500">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-12">
           {/* Left Image */}
           <div>
           <RoundedImage src="/assets/images/Rectangle33(1).jpg" alt="Happy Customers" className="rounded-l-full w-[350px] h-[280px] mt-7"/>
@@ -42,7 +42,7 @@ const OurStorySection = () => {
           </div>
 
            {/* YouTube Stats Box */}
-            <div className="flex items-center justify-center col-start-1">
+            <div className="flex pt-12 pl-8">
               <StatsBox
                Icon={SlSocialYoutube}
                count="14K+"
@@ -57,7 +57,7 @@ const OurStorySection = () => {
             <RoundedImage
                 src="/assets/images/Frame214.jpg"
                 alt="Center Happy Customers"
-                className="rounded-r-full w-[350px] h-[280px]"
+                className="rounded-r-full bottom-0 right-0 pl-[5rem] pt-7"
             />   
             </div>       
             </div>
