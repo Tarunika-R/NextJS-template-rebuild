@@ -7,6 +7,7 @@ import OurStory from "./components/OurStory";
 import FeatureSection from "./components/FeatureSection";
 import AboutUs from "./components/AboutUs";
 import Features2 from "./components/Features2";
+import Footer from "./components/Footer";
 import {Sansita, Lato} from "next/font/google";
 import { cn } from "@/lib/utils";
 
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
           <FeatureSection/>
           <AboutUs/>
           <Features2/>
+          <Footer/>
         {children}
       </body>
     </html>
